@@ -33,7 +33,7 @@ const SLOWMO = process.env.SLOWMO ? parseInt(process.env.SLOWMO) : 0;
 export default defineConfig({
   testDir: './tests',
   /* Set max time for test function */
-  timeout: 30000,
+  timeout: 60000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */

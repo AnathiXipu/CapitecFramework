@@ -1,0 +1,30 @@
+Understand the page object differences
+
+SimpleHomepgae vs a SimpleProductPage
+
+//SimpleHomepgae:
+
+Handles the 'browsing' experience
+
+Responsible for: 
+
+- Navigating to the Home Page 
+- Clicking categories
+- Selecting products from the list
+- Going to the cart
+
+//SimpleProductsPage:
+
+-Handles the "product interaction"  experience
+
+Responsible for:
+
+- Getting product details
+- Adding product to the cart
+- Handling add-to-cart alerts
+
+Why is this important? Speciically referring to the seperation
+- Each page object has a sinlgle responsibility
+- Makes code more maintable and easier to understand ***********
+- Follows the principle of seperation of concerns
+- Mirrors real-world shopping behaviour
