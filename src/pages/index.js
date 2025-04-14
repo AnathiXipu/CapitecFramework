@@ -4,6 +4,7 @@
 import SimpleHomePage from './demo/SimpleHomePage.js';
 import SimpleProductPage from './demo/simpleProductPage.js';
 import SimpleCartPage from './demo/simpleCartPage.js';
+import SimplePurchaseFormPage from './demo/simplePurchaseFormPage.js';
 
 
 // import BasePage from './BasePage.js';
@@ -18,5 +19,6 @@ import SimpleCartPage from './demo/simpleCartPage.js';
 export {
     SimpleHomePage,
     SimpleProductPage,
-    SimpleCartPage
+    SimpleCartPage,
+    SimplePurchaseFormPage
 }; 

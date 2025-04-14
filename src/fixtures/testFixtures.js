@@ -17,7 +17,7 @@ Think of them as a "preparation" step that happens before your tests runs.
 
 import { test as base } from '@playwright/test'
 
-import { SimpleHomePage, SimpleProductPage, SimpleCartPage } from '../pages/index.js'
+import { SimpleHomePage, SimpleProductPage, SimpleCartPage, SimplePurchaseFormPage } from '../pages/index.js'
 
 
 /**
@@ -50,6 +50,13 @@ export const test = base.extend({
     cartPage: async ({ page }, use) => {
         const cartPage = new SimpleCartPage(page);
         await use(cartPage);
+    },
+
+    //Simple Purchase Form Page Fixture
+
+    formPage: async ({ page }, use) => {
+        const formPage = new SimplePurchaseFormPage(page);
+        await use(formPage);
     },
 })
 

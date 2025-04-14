@@ -44,6 +44,10 @@ class SimpleCartPage extends BasePage {
         //#tbodyid - is the first part
         // td:nth-child(2) - is the second part
 
+        //Locator #2
+        // This is the "Place Order" button in the cart
+        this.placeOrderButton = '.btn-success';
+
 
 
     }
@@ -51,7 +55,7 @@ class SimpleCartPage extends BasePage {
 
     /**
      * Check if the specific product is in the cart
-     * @param {string} productName - Name of productto check for
+     * @param {string} productName - Name of product  to check for
      * @returns {Promise<boolean} True if product is in cart
      * Boolean means this returns true of false
      * 
@@ -81,8 +85,18 @@ class SimpleCartPage extends BasePage {
             }
         }
 
+
         console.log(`Product not found in cart: ${productName}`);
         return false;
+
+    }
+
+    //Place an Order for the item/s in the cart
+    async placeOrder() {
+
+        await this.page.click(this.placeOrderButton);
+        console.log('Clicked Place Order Button');
+        await this.page.waitForTimeout(1000);
 
     }
 

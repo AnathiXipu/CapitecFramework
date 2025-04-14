@@ -62,7 +62,7 @@ export default defineConfig({
       slowMo: SLOWMO,
     },
     /* Set viewport size */
-    viewport: { width: 1280, height: 720 },
+    viewport: { width: 1200, height: 700 },
   },
 
   /* Configure projects for major browsers */
